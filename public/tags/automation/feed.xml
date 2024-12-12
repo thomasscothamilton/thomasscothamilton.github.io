@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automation on Thomas-Scot Hamilton</title>
+    <link>http://localhost:1313/tags/automation/</link>
+    <description>Recent content in Automation on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/automation/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up and Use a .github Repository in a GitHub Organization</title>
+      <link>http://localhost:1313/posts/github/special-repository/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/github/special-repository/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;.github&lt;/code&gt; repository is a powerful and special repository in a GitHub organization. It allows you to manage reusable templates, shared workflows, and organization-wide settings. In this guide, we’ll walk through the steps to set up and leverage a &lt;code&gt;.github&lt;/code&gt; repository to improve your team&amp;rsquo;s efficiency and standardization.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-github-repository&#34;&gt;&lt;strong&gt;What Is a .github Repository?&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;.github&lt;/code&gt; repository is a centralized place where you can define and share:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community health files&lt;/strong&gt; (e.g., &lt;code&gt;CODE_OF_CONDUCT.md&lt;/code&gt;, &lt;code&gt;CONTRIBUTING.md&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Issue and pull request templates&lt;/strong&gt; for standardizing contributions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reusable workflows&lt;/strong&gt; for GitHub Actions to streamline CI/CD pipelines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Organization profile page&lt;/strong&gt; using a &lt;code&gt;README.md&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This repository applies settings and templates across all repositories in your organization unless overridden.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

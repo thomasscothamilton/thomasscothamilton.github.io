@@ -2,38 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thomas-Scot Hamilton</title>
-    <link>http://thomasscothamilton.com/</link>
+    <link>http://localhost:57643/</link>
     <description>Recent content on Thomas-Scot Hamilton</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://thomasscothamilton.com/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57643/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contact</title>
-      <link>http://thomasscothamilton.com/contact/</link>
+      <link>http://localhost:57643/contact/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://thomasscothamilton.com/contact/</guid>
+      <guid>http://localhost:57643/contact/</guid>
       <description>&lt;h2 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out via &lt;a href=&#34;mailto:thomas.scot.hamilton@gmail.com&#34;&gt;email&lt;/a&gt; or connect with me on &lt;a href=&#34;https://linkedin.com/in/thomasscothamilton&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     <item>
       <title>Experience</title>
-      <link>http://thomasscothamilton.com/experience/</link>
+      <link>http://localhost:57643/experience/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://thomasscothamilton.com/experience/</guid>
+      <guid>http://localhost:57643/experience/</guid>
       <description>&lt;h2 id=&#34;leadership-roles&#34;&gt;Leadership Roles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led internal developer platform migration to AWS/GCP for Intuit, optimizing costs and scalability.&lt;/li&gt;&#xA;&lt;li&gt;Implemented self-serve solutions for ML orchestration, reducing deployment time by 40%.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-accomplishments&#34;&gt;Technical Accomplishments&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed reusable observability pipelines for Elasticsearch, Prometheus, and Kibana.&lt;/li&gt;&#xA;&lt;li&gt;Transitioned Mailchimp’s legacy ML systems to modern, cloud-native platforms.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&amp;hellip; (group by themes or projects for clarity)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Resume</title>
-      <link>http://thomasscothamilton.com/resume/</link>
+      <title>How to Set Up and Use a .github Repository in a GitHub Organization</title>
+      <link>http://localhost:57643/posts/github/special-repository/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://thomasscothamilton.com/resume/</guid>
+      <guid>http://localhost:57643/posts/github/special-repository/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;.github&lt;/code&gt; repository is a powerful and special repository in a GitHub organization. It allows you to manage reusable templates, shared workflows, and organization-wide settings. In this guide, we’ll walk through the steps to set up and leverage a &lt;code&gt;.github&lt;/code&gt; repository to improve your team&amp;rsquo;s efficiency and standardization.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;what-is-a-github-repository&#34;&gt;&lt;strong&gt;What Is a .github Repository?&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The &lt;code&gt;.github&lt;/code&gt; repository is a centralized place where you can define and share:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community health files&lt;/strong&gt; (e.g., &lt;code&gt;CODE_OF_CONDUCT.md&lt;/code&gt;, &lt;code&gt;CONTRIBUTING.md&lt;/code&gt;).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Issue and pull request templates&lt;/strong&gt; for standardizing contributions.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Reusable workflows&lt;/strong&gt; for GitHub Actions to streamline CI/CD pipelines.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Organization profile page&lt;/strong&gt; using a &lt;code&gt;README.md&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This repository applies settings and templates across all repositories in your organization unless overridden.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How to Set Up ArgoCD for Kubernetes Continuous Deployment</title>
+      <link>http://localhost:57643/posts/argo/setting-up-argocd/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57643/posts/argo/setting-up-argocd/</guid>
+      <description>&lt;p&gt;ArgoCD is a powerful GitOps tool designed to automate Kubernetes deployments. It provides a declarative approach to continuous deployment, ensuring your Kubernetes clusters are always in sync with your Git repository.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we’ll walk through setting up ArgoCD in a Kubernetes cluster and deploying a sample application.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Before getting started, ensure you have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A running &lt;strong&gt;Kubernetes cluster&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;kubectl&lt;/strong&gt; installed and configured to access your cluster.&lt;/li&gt;&#xA;&lt;li&gt;Administrative access to the cluster (for namespace creation and permissions).&lt;/li&gt;&#xA;&lt;li&gt;A &lt;strong&gt;Git repository&lt;/strong&gt; containing Kubernetes manifests or Helm charts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1-install-argocd&#34;&gt;&lt;strong&gt;Step 1: Install ArgoCD&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add the &lt;code&gt;argocd&lt;/code&gt; namespace to your Kubernetes cluster:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl create namespace argocd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;Install ArgoCD using the official manifests:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;Verify that the ArgoCD pods are running:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl get pods -n argocd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should see pods like argocd-server, argocd-repo-server, argocd-application-controller, and argocd-dex-server in a Running state.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:57643/resume/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57643/resume/</guid>
       <description>&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bachelor of Science in Computer Science (BSCS)&lt;/strong&gt;&lt;br&gt;&#xA;Kennesaw State University - Kennesaw, Georgia&lt;br&gt;&#xA;Senior - Expected TBD&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;staff-software-engineer&#34;&gt;Staff Software Engineer&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intuit&lt;/strong&gt; - Atlanta, Georgia (Aug 2023 - Present)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led overhaul of Mailchimp’s machine learning infrastructure to an AWS-based internal developer platform.&lt;/li&gt;&#xA;&lt;li&gt;Established a self-serve orchestration framework for AI/ML experimentation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;senior-software-engineer&#34;&gt;Senior Software Engineer&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intuit&lt;/strong&gt; - Atlanta, Georgia (Nov 2021 - Aug 2023)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tech lead for machine learning pipelines and inference serving runtimes with real-time observability.&lt;/li&gt;&#xA;&lt;li&gt;Migrated ML platform from co-located infrastructure to GCP.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&amp;hellip; (add other roles similarly)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Skills</title>
-      <link>http://thomasscothamilton.com/skills/</link>
+      <title>Setting Up a Kubernetes Cluster on GKE Using Terraform</title>
+      <link>http://localhost:57643/posts/terraform/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://thomasscothamilton.com/skills/</guid>
+      <guid>http://localhost:57643/posts/terraform/</guid>
+      <description>&lt;p&gt;Google Kubernetes Engine (GKE) is one of the most popular managed Kubernetes platforms, offering powerful scalability and simplicity for developers and operators. Using Terraform, we can automate and streamline the provisioning of GKE clusters. In this guide, we’ll use the &lt;strong&gt;GKE Terraform Module&lt;/strong&gt; to stand up a Kubernetes cluster.&lt;/p&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+    <item>
+      <title>Skills</title>
+      <link>http://localhost:57643/skills/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57643/skills/</guid>
       <description>&lt;h2 id=&#34;programming-languages&#34;&gt;Programming Languages&lt;/h2&gt;&#xA;&lt;p&gt;Python, Java, PHP, Go, Ruby&lt;/p&gt;&#xA;&lt;h2 id=&#34;cloud-platforms&#34;&gt;Cloud Platforms&lt;/h2&gt;&#xA;&lt;p&gt;AWS, GCP&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h2&gt;&#xA;&lt;p&gt;Kubeflow, Argo Workflows, Vertex AI, Inference Serving&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-streaming--processing&#34;&gt;Data Streaming &amp;amp; Processing&lt;/h2&gt;&#xA;&lt;p&gt;Kafka, Kafka Connect, KSQL, Zookeeper, Minio, PubSub&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip; (include the rest as bulleted lists or categorized tables)&lt;/p&gt;</description>
     </item>
   </channel>

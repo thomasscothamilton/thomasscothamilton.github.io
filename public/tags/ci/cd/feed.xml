@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CI/CD on Thomas-Scot Hamilton</title>
+    <link>http://localhost:57643/tags/ci/cd/</link>
+    <description>Recent content in CI/CD on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57643/tags/ci/cd/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Set Up ArgoCD for Kubernetes Continuous Deployment</title>
+      <link>http://localhost:57643/posts/argo/setting-up-argocd/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57643/posts/argo/setting-up-argocd/</guid>
+      <description>&lt;p&gt;ArgoCD is a powerful GitOps tool designed to automate Kubernetes deployments. It provides a declarative approach to continuous deployment, ensuring your Kubernetes clusters are always in sync with your Git repository.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we’ll walk through setting up ArgoCD in a Kubernetes cluster and deploying a sample application.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Before getting started, ensure you have:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A running &lt;strong&gt;Kubernetes cluster&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;kubectl&lt;/strong&gt; installed and configured to access your cluster.&lt;/li&gt;&#xA;&lt;li&gt;Administrative access to the cluster (for namespace creation and permissions).&lt;/li&gt;&#xA;&lt;li&gt;A &lt;strong&gt;Git repository&lt;/strong&gt; containing Kubernetes manifests or Helm charts.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1-install-argocd&#34;&gt;&lt;strong&gt;Step 1: Install ArgoCD&lt;/strong&gt;&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add the &lt;code&gt;argocd&lt;/code&gt; namespace to your Kubernetes cluster:&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;kubectl create namespace argocd&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>
