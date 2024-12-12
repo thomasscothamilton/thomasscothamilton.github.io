@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=57643&amp;path=livereload" data-no-instant defer></script>
-    <title>How to Set Up an OpenAPI-Generated Server // Thomas-Scot Hamilton</title>
+    <title> // Thomas-Scot Hamilton</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.139.4">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Thomas-Scot Hamilton" />
-    <meta name="description" content="A step-by-step guide to generating and running a server from an OpenAPI specification using the OpenAPI Generator tool." />
+    <meta name="description" content="" />
     <link rel="stylesheet" href="/css/main.min.5b1d69ccd642f565b9e9d789680fde7c8849fbfe08daa33426c3340363f5030a.css" />
     
 
@@ -28,22 +28,20 @@
       </script>
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="How to Set Up an OpenAPI-Generated Server">
-  <meta name="twitter:description" content="A step-by-step guide to generating and running a server from an OpenAPI specification using the OpenAPI Generator tool.">
+  <meta name="twitter:title" content="Thomas-Scot Hamilton">
+  <meta name="twitter:description" content="Overview The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.
+Prerequisites Before you begin, ensure you have:
+An OpenAPI Specification (YAML or JSON): You need a valid OpenAPI document. For example, openapi.yaml. OpenAPI Generator: Install the OpenAPI Generator CLI. For example, using Homebrew run brew install openapi-generator. Using npm run npm install @openapitools/openapi-generator-cli -g. A Chosen Programming Language and Framework: Decide which language and framework you want to generate the server in (Java Spring, Node.js Express, Python Flask, Go Gin, etc.). Step 1: Verify Your OpenAPI Specification Validate your OpenAPI spec: openapi-generator validate -i openapi.yaml">
 
     <meta property="og:url" content="http://localhost:57643/posts/openapi/setup-python-server/">
   <meta property="og:site_name" content="Thomas-Scot Hamilton">
-  <meta property="og:title" content="How to Set Up an OpenAPI-Generated Server">
-  <meta property="og:description" content="A step-by-step guide to generating and running a server from an OpenAPI specification using the OpenAPI Generator tool.">
+  <meta property="og:title" content="Thomas-Scot Hamilton">
+  <meta property="og:description" content="Overview The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.
+Prerequisites Before you begin, ensure you have:
+An OpenAPI Specification (YAML or JSON): You need a valid OpenAPI document. For example, openapi.yaml. OpenAPI Generator: Install the OpenAPI Generator CLI. For example, using Homebrew run brew install openapi-generator. Using npm run npm install @openapitools/openapi-generator-cli -g. A Chosen Programming Language and Framework: Decide which language and framework you want to generate the server in (Java Spring, Node.js Express, Python Flask, Go Gin, etc.). Step 1: Verify Your OpenAPI Specification Validate your OpenAPI spec: openapi-generator validate -i openapi.yaml">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-12-12T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-12-12T00:00:00+00:00">
-    <meta property="article:tag" content="Openapi">
-    <meta property="article:tag" content="Api">
-    <meta property="article:tag" content="Server">
-    <meta property="article:tag" content="Code Generation">
 
 
   </head>
@@ -90,103 +88,60 @@
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">How to Set Up an OpenAPI-Generated Server</h1>
+      <h1 class ="post-title"></h1>
       <div class="post-meta">
         <div>
           <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Dec 12, 2024
+          Jan 1, 0001
         </div>
         <div>
           <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-          3 min read
-        </div>
-        <div>
-          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              <a class="tag" href="http://localhost:57643/tags/openapi/">Openapi</a>
-              <a class="tag" href="http://localhost:57643/tags/api/">Api</a>
-              <a class="tag" href="http://localhost:57643/tags/server/">Server</a>
-              <a class="tag" href="http://localhost:57643/tags/code-generation/">Code Generation</a>
+          2 min read
         </div>
       </div>
     </header>
     <div class="post-content">
-      <h2 id="overview">Overview</h2>
-<p>The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Before you begin, ensure you have:</p>
-<ol>
-<li><strong>An OpenAPI Specification (YAML or JSON):</strong> You need a valid OpenAPI document. For example, <code>openapi.yaml</code>.</li>
-<li><strong>OpenAPI Generator:</strong> Install the OpenAPI Generator CLI. You can do this using Homebrew, npm, or direct download. For example, using Homebrew:
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>brew install openapi-generator
-</span></span></code></pre></div></li>
-</ol>
-<p>Or using npm:</p>
-<p>bash
-Copy code
-npm install @openapitools/openapi-generator-cli -g
-A Chosen Programming Language and Framework: Decide which language and framework you want to generate the server in (e.g., Java Spring, Node.js Express, Python Flask, Go Gin, etc.).
+      <p>Overview
+The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.</p>
+<p>Prerequisites
+Before you begin, ensure you have:</p>
+<p>An OpenAPI Specification (YAML or JSON): You need a valid OpenAPI document. For example, openapi.yaml.
+OpenAPI Generator: Install the OpenAPI Generator CLI. For example, using Homebrew run brew install openapi-generator. Using npm run npm install @openapitools/openapi-generator-cli -g.
+A Chosen Programming Language and Framework: Decide which language and framework you want to generate the server in (Java Spring, Node.js Express, Python Flask, Go Gin, etc.).
 Step 1: Verify Your OpenAPI Specification
-Before generating the server, ensure your OpenAPI spec is valid:</p>
-<p>bash
-Copy code
-openapi-generator validate -i openapi.yaml
-If there are any errors, correct them before proceeding.</p>
+Validate your OpenAPI spec:
+openapi-generator validate -i openapi.yaml</p>
+<p>If there are errors, correct them before proceeding.</p>
 <p>Step 2: Generate the Server Code
-Use the openapi-generator CLI to generate server stubs. For example, to generate a Node.js Express server:</p>
-<p>bash
-Copy code
-openapi-generator generate <br>
--i openapi.yaml <br>
--g nodejs-express-server <br>
--o ./generated-server
-Parameters:</p>
-<p>-i openapi.yaml: The input OpenAPI specification file.
--g nodejs-express-server: The generator type (change this based on your chosen language/framework).
--o ./generated-server: The output directory where generated code will be placed.
-Refer to the OpenAPI Generator Documentation for a list of available generators.</p>
+Use the CLI to generate server stubs. For a Node.js Express server:
+openapi-generator generate -i openapi.yaml -g nodejs-express-server -o ./generated-server</p>
+<p>Parameters:
+-i openapi.yaml: Input OpenAPI specification file.
+-g nodejs-express-server: Generator type (change as needed).
+-o ./generated-server: Output directory.</p>
+<p>Refer to the OpenAPI Generator documentation for available generators.</p>
 <p>Step 3: Review the Generated Code
-Navigate to the generated directory:</p>
-<p>bash
-Copy code
-cd generated-server
-You’ll find:</p>
-<p>Server boilerplate code: Pre-set routes, controllers, and model classes/interfaces based on your specification.
-README and instructions: Notes on how to run and configure the server.
-Package/Build Files: Dependencies and build scripts aligned with the chosen language/framework.
-Step 4: Install Dependencies
-If the generated server requires dependencies, install them. For Node.js, for example:</p>
-<p>bash
-Copy code
-npm install
-For other languages, follow the instructions in the generated README.md (e.g., mvn install for Java, pip install -r requirements.txt for Python, etc.).</p>
+Navigate to the generated directory:
+cd generated-server</p>
+<p>You’ll find server boilerplate code, a README, and package/build files.</p>
+<p>Step 4: Install Dependencies
+If required, install dependencies. For Node.js:
+npm install</p>
+<p>For other languages, follow the instructions in the generated README (e.g., mvn install for Java, pip install -r requirements.txt for Python).</p>
 <p>Step 5: Run the Server
-Start the server according to the instructions in the generated project. For Node.js Express:</p>
-<p>bash
-Copy code
-npm start
-For Java Spring:</p>
-<p>bash
-Copy code
-mvn spring-boot:run
-For Python Flask:</p>
-<p>bash
-Copy code
-python -m flask run
-When the server starts, it will typically listen on a default port (e.g., http://localhost:8080 for many Java-based servers, http://localhost:3000 for Node.js).</p>
+Start the server using the instructions provided. For Node.js Express:
+npm start</p>
+<p>For Java Spring:
+mvn spring-boot:run</p>
+<p>For Python Flask:
+python -m flask run</p>
+<p>The server should listen on a default port (e.g., http://localhost:8080 or http://localhost:3000).</p>
 <p>Step 6: Test Your Endpoints
-Use a tool like curl, HTTPie, or a graphical client like Postman or Insomnia to test your API endpoints:</p>
-<p>bash
-Copy code
-curl http://localhost:8080/api/v1/example
-If the endpoint matches the paths defined in your OpenAPI spec, you’ll receive the expected responses (initially stubs, which you can then customize).</p>
+Use a tool like curl:
+curl http://localhost:8080/api/v1/example</p>
+<p>If the endpoint matches your OpenAPI paths, you’ll see the expected responses.</p>
 <p>Step 7: Customize and Implement Business Logic
-The generated code provides the scaffolding. You can now:</p>
-<p>Add business logic to the controller methods.
-Integrate with databases or external services.
-Adjust routing, security, and middleware configurations as needed.
-As you develop, use your OpenAPI spec as a source of truth. Any changes to the API surface (paths, parameters, models) can be updated in the spec and re-generated, ensuring that your code stays in sync with your design.</p>
-<p>Conclusion
-You have successfully generated and run a server from an OpenAPI specification. This workflow helps maintain consistency between your API contract and the server-side implementation, speeding up development and reducing discrepancies. With the basic setup complete, you can now refine and enhance the server to meet your project’s needs.</p>
+Add business logic to the controller methods, integrate with databases, or adjust routing, security, and middleware as needed. Update and regenerate code if you change the API surface in the OpenAPI spec.</p>
 
     </div>
     <div class="post-footer">
