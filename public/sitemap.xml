@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57062/contact/</loc>
+    <loc>http://localhost:57192/contact/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57062/experience/</loc>
+    <loc>http://localhost:57192/experience/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57062/resume/</loc>
+    <loc>http://localhost:57192/resume/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57062/skills/</loc>
+    <loc>http://localhost:57192/skills/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57062/</loc>
+    <loc>http://localhost:57192/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57062/categories/</loc>
+    <loc>http://localhost:57192/categories/</loc>
   </url><url>
-    <loc>http://localhost:57062/tags/</loc>
+    <loc>http://localhost:57192/tags/</loc>
   </url>
 </urlset>
