@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gcp on Thomas-Scot Hamilton</title>
+    <link>http://localhost:57643/tags/gcp/</link>
+    <description>Recent content in Gcp on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57643/tags/gcp/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Install GCP Config Connector</title>
+      <link>http://localhost:57643/posts/gcp/setting-up-config-connector/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57643/posts/gcp/setting-up-config-connector/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Google Cloud Config Connector (Config Connector) is a Kubernetes add-on that allows you to manage Google Cloud Platform (GCP) resources using Kubernetes-style configuration. By installing Config Connector on your cluster, you can provision and manage GCP services—like Cloud SQL instances, Pub/Sub topics, and Cloud Storage buckets—through standard Kubernetes manifests.&lt;/p&gt;&#xA;&lt;p&gt;In this guide, we’ll walk you through the prerequisites, the installation process, and how to verify a successful installation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before you begin, ensure you have:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
