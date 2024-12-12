@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas-Scot Hamilton</title>
+    <link>http://localhost:57062/</link>
+    <description>Recent content on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:57062/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:57062/contact/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57062/contact/</guid>
+      <description>&lt;h2 id=&#34;contact-me&#34;&gt;Contact Me&lt;/h2&gt;&#xA;&lt;p&gt;Feel free to reach out via &lt;a href=&#34;mailto:thomas.scot.hamilton@gmail.com&#34;&gt;email&lt;/a&gt; or connect with me on &lt;a href=&#34;https://linkedin.com/in/thomasscothamilton&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    <item>
+      <title>Experience</title>
+      <link>http://localhost:57062/experience/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57062/experience/</guid>
+      <description>&lt;h2 id=&#34;leadership-roles&#34;&gt;Leadership Roles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led internal developer platform migration to AWS/GCP for Intuit, optimizing costs and scalability.&lt;/li&gt;&#xA;&lt;li&gt;Implemented self-serve solutions for ML orchestration, reducing deployment time by 40%.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;technical-accomplishments&#34;&gt;Technical Accomplishments&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed reusable observability pipelines for Elasticsearch, Prometheus, and Kibana.&lt;/li&gt;&#xA;&lt;li&gt;Transitioned Mailchimp’s legacy ML systems to modern, cloud-native platforms.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&amp;hellip; (group by themes or projects for clarity)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Resume</title>
+      <link>http://localhost:57062/resume/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57062/resume/</guid>
+      <description>&lt;h2 id=&#34;education&#34;&gt;Education&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Bachelor of Science in Computer Science (BSCS)&lt;/strong&gt;&lt;br&gt;&#xA;Kennesaw State University - Kennesaw, Georgia&lt;br&gt;&#xA;Senior - Expected TBD&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;experience&#34;&gt;Experience&lt;/h2&gt;&#xA;&lt;h3 id=&#34;staff-software-engineer&#34;&gt;Staff Software Engineer&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intuit&lt;/strong&gt; - Atlanta, Georgia (Aug 2023 - Present)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led overhaul of Mailchimp’s machine learning infrastructure to an AWS-based internal developer platform.&lt;/li&gt;&#xA;&lt;li&gt;Established a self-serve orchestration framework for AI/ML experimentation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;senior-software-engineer&#34;&gt;Senior Software Engineer&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Intuit&lt;/strong&gt; - Atlanta, Georgia (Nov 2021 - Aug 2023)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tech lead for machine learning pipelines and inference serving runtimes with real-time observability.&lt;/li&gt;&#xA;&lt;li&gt;Migrated ML platform from co-located infrastructure to GCP.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&amp;hellip; (add other roles similarly)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Skills</title>
+      <link>http://localhost:57062/skills/</link>
+      <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:57062/skills/</guid>
+      <description>&lt;h2 id=&#34;programming-languages&#34;&gt;Programming Languages&lt;/h2&gt;&#xA;&lt;p&gt;Python, Java, PHP, Go, Ruby&lt;/p&gt;&#xA;&lt;h2 id=&#34;cloud-platforms&#34;&gt;Cloud Platforms&lt;/h2&gt;&#xA;&lt;p&gt;AWS, GCP&lt;/p&gt;&#xA;&lt;h2 id=&#34;machine-learning&#34;&gt;Machine Learning&lt;/h2&gt;&#xA;&lt;p&gt;Kubeflow, Argo Workflows, Vertex AI, Inference Serving&lt;/p&gt;&#xA;&lt;h2 id=&#34;data-streaming--processing&#34;&gt;Data Streaming &amp;amp; Processing&lt;/h2&gt;&#xA;&lt;p&gt;Kafka, Kafka Connect, KSQL, Zookeeper, Minio, PubSub&lt;/p&gt;&#xA;&lt;p&gt;&amp;hellip; (include the rest as bulleted lists or categorized tables)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
