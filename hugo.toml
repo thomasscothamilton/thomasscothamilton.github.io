@@ -2,6 +2,7 @@ baseURL = 'http://thomasscothamilton.com/'
 languageCode = 'en-us'
 title = 'Thomas-Scot Hamilton'
 theme = 'hugo-theme-m10c'
+googleAnalytics = "G-WMDT577B42"
 
 [menu]
   [[menu.main]]
@@ -31,17 +32,11 @@ theme = 'hugo-theme-m10c'
     weight = 5
 
 [params]
-  # Styling configuration
-  [params.style]
-    darkestColor = "#1a1a1a"    # Rich Black
-    darkColor = "#2c2c2c"       # Dark Charcoal
-    lightColor = "#afbac4"      # Pale Yellow
-    lightestColor = "#ffffff"   # White
-    primaryColor = "#16a085"    # Teal Green
-
   # General information
   author = "Thomas-Scot Hamilton"
   description = "Experienced Staff Software Engineer with expertise in AI/ML infrastructure, internal developer platforms, and scalable cloud solutions."
+  # Additional settings
+  menu_item_separator = " | "
 
   # Social links
   [[params.social]]
@@ -57,8 +52,13 @@ theme = 'hugo-theme-m10c'
     name = "Email"
     url = "mailto:thomas.scot.hamilton@gmail.com"
 
-  # Additional settings
-  menu_item_separator = " | "
+  # Styling configuration
+  [params.style]
+    darkestColor = "#1a1a1a"    # Rich Black
+    darkColor = "#2c2c2c"       # Dark Charcoal
+    lightColor = "#afbac4"      # Pale Yellow
+    lightestColor = "#ffffff"   # White
+    primaryColor = "#16a085"    # Teal Green
 
 [outputFormats]
   [outputFormats.RSS]

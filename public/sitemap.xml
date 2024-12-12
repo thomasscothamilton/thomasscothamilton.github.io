@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:57192/contact/</loc>
+    <loc>http://thomasscothamilton.com/contact/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57192/experience/</loc>
+    <loc>http://thomasscothamilton.com/experience/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57192/resume/</loc>
+    <loc>http://thomasscothamilton.com/resume/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57192/skills/</loc>
+    <loc>http://thomasscothamilton.com/skills/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57192/</loc>
+    <loc>http://thomasscothamilton.com/</loc>
     <lastmod>2024-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:57192/categories/</loc>
+    <loc>http://thomasscothamilton.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:57192/tags/</loc>
+    <loc>http://thomasscothamilton.com/tags/</loc>
   </url>
 </urlset>
