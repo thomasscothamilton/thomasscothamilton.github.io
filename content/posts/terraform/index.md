@@ -14,42 +14,104 @@ private GKE cluster with a structured and reusable design.
 
 [Terraform GKE Cluster Repository](https://github.com/your-username/terraform-gke-cluster)
 
+```shell
+git clone git@github.com:thomasscothamilton/terraform-google-kubernetes-engine.git
+```
+
+```shell
+cd terraform-google-kubernetes-engine
+```
+
 ## Prerequisites
 
-1. Terraform Installed: Ensure Terraform CLI is installed. Download Terraform.
+1. Install Terraform:
 
-2. 2 Google Cloud SDK: Install and configure the Google Cloud SDK.
+```shell
+# Download and install Terraform
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
+
+# Verify installation
+terraform -v
+```
+
+2. Install and Configure Google Cloud SDK:
+
+```shell
+# Download and install Google Cloud SDK
+curl https://sdk.cloud.google.com | bash
+
+# Restart your shell
+exec -l $SHELL
+
+# Initialize the SDK
+gcloud init
+
+# Verify installation
+gcloud version
+```
 
 3. Service Account: Create a service account with the necessary permissions for GKE, Networking, and Storage APIs.
 
+```shell
+# Set your project ID
+PROJECT_ID="your-gcp-project-id"
+
+# Create the service account
+gcloud iam service-accounts create terraform-sa --display-name "Terraform Service Account"
+
+# Assign roles to the service account
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member "serviceAccount:terraform-sa@$PROJECT_ID.iam.gserviceaccount.com" \
+  --role "roles/container.admin"
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member "serviceAccount:terraform-sa@$PROJECT_ID.iam.gserviceaccount.com" \
+  --role "roles/compute.admin"
+gcloud projects add-iam-policy-binding $PROJECT_ID \
+  --member "serviceAccount:terraform-sa@$PROJECT_ID.iam.gserviceaccount.com" \
+  --role "roles/storage.admin"
+
+# Create a key for the service account
+gcloud iam service-accounts keys create ~/terraform-key.json \
+  --iam-account terraform-sa@$PROJECT_ID.iam.gserviceaccount.com
+```
+
 4. Enable APIs: Ensure the following APIs are enabled:
-   * Kubernetes Engine API
-   * Compute Engine API
-   * Cloud Storage API 
+```shell
+ 
+# Enable Kubernetes Engine API
+gcloud services enable container.googleapis.com
+
+# Enable Compute Engine API
+gcloud services enable compute.googleapis.com
+
+# Enable Cloud Storage API
+gcloud services enable storage.googleapis.com
+```
    
 5. Credentials: Export Google Cloud credentials:
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-service-account-key.json"
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/google-application-credentials.json"
 ```
 
 ## Module Structure
 
 ### Files
 
-1. backend.tf: Configures the backend to store Terraform state in a GCS bucket.
+1. **backend.tf**: Configures the backend to store Terraform state in a GCS bucket.
 
-2. versions.tf: Defines Terraform and provider version constraints.
+2. **versions.tf**: Defines Terraform and provider version constraints.
 
-3. provider.tf: Configures the Google Cloud provider.
+3. **provider.tf**: Configures the Google Cloud provider.
 
-4. variables.tf: Defines input variables for the module.
+4. **variables.tf**: Defines input variables for the module.
 
-5. main.tf: Deploys the GKE cluster using the network module.
+5. **main.tf**: Deploys the GKE cluster using the network module.
 
-6. network.tf: Sets up the VPC and subnet configurations.
+6. **network.tf**: Sets up the VPC and subnet configurations.
 
-7. outputs.tf: Exports outputs like cluster endpoint, CA certificate, and network details.
+7. **outputs.tf**: Exports outputs like cluster endpoint, CA certificate, and network details.
 
 ## Step 1: Initialize Terraform
 
@@ -58,10 +120,17 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your-service-account-key.json"
 2. Navigate to the module directory:
 
 ```bash
-cd /path/to/module
+cd environments/dev
 ```
 
 3. Initialize Terraform:
+
+```shell
+export TF_VAR_project_id="my-gcp-project"
+export TF_VAR_region="us-central1"
+export TF_VAR_network="my-vpc-network"
+export TF_VAR_subnetwork="my-subnet"
+```
 
 ```bash
 terraform init
@@ -108,17 +177,17 @@ Example Outputs
 ### GCP Network Configuration (network.tf)
  
 #### VPC Creation:
-    * Creates a custom VPC network.
-    * Configures subnets with secondary IP ranges for pods and services.
+* Creates a custom VPC network.
+* Configures subnets with secondary IP ranges for pods and services.
 
 #### Subnets:
-    * A primary subnet for cluster nodes.
-    * A master subnet for GKE private endpoint authentication.
+* A primary subnet for cluster nodes.
+* A master subnet for GKE private endpoint authentication.
 
 ### Autopilot Private GKE Cluster (main.tf)
-    * Creates a GKE cluster with the following features:
-        * Autopilot mode.
-        * Private nodes and private endpoints.
-        * Regional clusters for high availability.
-        * IP ranges for pods and services.
+* Creates a GKE cluster with the following features:
+    * Autopilot mode.
+    * Private nodes and private endpoints.
+    * Regional clusters for high availability.
+    * IP ranges for pods and services.
 
