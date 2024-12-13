@@ -2,12 +2,17 @@
 title: "Setting Up a Kubernetes Cluster on GKE Using Terraform"
 date: 2024-12-11
 tags: ["GKE", "Kubernetes", "Terraform", "DevOps"]
+repository: "https://github.com/thomasscothamilton/terraform-google-kubernetes-engine"
 ---
 
 # Setting Up a Kubernetes Cluster on GKE Using Terraform
 
 This guide describes how to configure and deploy a Terraform module to set up a GCP network and an autopilot 
 private GKE cluster with a structured and reusable design.
+
+## Repository
+
+[Terraform GKE Cluster Repository](https://github.com/your-username/terraform-gke-cluster)
 
 ## Prerequisites
 
@@ -116,3 +121,4 @@ Example Outputs
         * Private nodes and private endpoints.
         * Regional clusters for high availability.
         * IP ranges for pods and services.
+
