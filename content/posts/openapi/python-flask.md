@@ -19,6 +19,10 @@ Step 1: Verify Your OpenAPI Specification
 Validate your OpenAPI spec:
 openapi-generator validate -i openapi.yaml
 
+```shell
+git clone git@github.com:thomasscothamilton/openapi-python-flask.git
+```
+
 If there are errors, correct them before proceeding.
 
 Step 2: Generate the Server Code
