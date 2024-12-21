@@ -1,3 +1,11 @@
+---
+title: "Setting Up a Python-Based Service for OpenAI API with GitHub-Hosted Prompts"
+date: 2024-12-12
+draft: false
+description: "Learn how to set up a Python-based service that retrieves prompts from a GitHub repository and uses them to make calls to the OpenAI Assistant API."
+tags: ["OpenAI", "Python", "APIs", "GitHub", "Automation"]
+---
+
 Here’s a markdown document to describe setting up a Python-based service that uses a GitHub repository containing prompts to leverage when calling the OpenAI Assistant API:
 
 markdown

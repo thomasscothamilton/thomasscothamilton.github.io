@@ -1,3 +1,11 @@
+---
+title: "Setting Up Rancher on Google Kubernetes Engine (GKE)"
+date: 2024-12-12
+draft: false
+description: "Learn how to set up Rancher on Google Kubernetes Engine (GKE) to manage Kubernetes clusters and applications through a centralized control plane."
+tags: ["Rancher", "Kubernetes", "GKE", "DevOps", "Cloud Computing"]
+---
+
 Prerequisites
 Google Cloud SDK (gcloud) installed and authenticated
 kubectl installed and configured

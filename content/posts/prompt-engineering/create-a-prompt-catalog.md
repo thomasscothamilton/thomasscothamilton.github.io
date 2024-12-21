@@ -1,3 +1,11 @@
+---
+title: "Setting Up a Prompt Catalog on GitHub for OpenAI Assistant Requests"
+date: 2024-12-12
+draft: false
+description: "Learn how to set up a structured prompt catalog on GitHub to manage and version-control prompts for use with the OpenAI Assistant API."
+tags: ["OpenAI", "Prompt Engineering", "GitHub", "APIs", "Automation"]
+---
+
 # Setting Up a Prompt Catalog on GitHub for OpenAI Assistant Requests
 
 A **Prompt Catalog** on GitHub allows you to centrally manage and version-control prompts for use with the OpenAI Assistant API. This guide walks through setting up a structured catalog in a GitHub repository.
