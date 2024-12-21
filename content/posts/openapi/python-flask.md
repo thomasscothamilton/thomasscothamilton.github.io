@@ -1,3 +1,11 @@
+---
+title: "Generating a Server from an OpenAPI Specification"
+date: 2024-12-12
+draft: false
+description: "Learn how to generate a server from an OpenAPI specification using the OpenAPI Generator tool, providing a quick starting point for developing your API backend."
+tags: ["OpenAPI", "APIs", "Server Development", "Code Generation"]
+---
+
 Overview
 The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.
 
