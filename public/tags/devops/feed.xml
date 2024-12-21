@@ -23,6 +23,13 @@
       <description>&lt;p&gt;GitOps has emerged as a key pattern for continuous delivery and operational management within Kubernetes and other cloud-native environments. By adopting Git as the single source of truth for both application code and infrastructure configurations, teams can achieve more consistent, predictable, and audited workflows. In this guide, we’ll outline the foundational best practices that will help you set up a robust GitOps pipeline, ensure observability and security, and support collaboration across development and operations teams.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Setting Up Rancher on Google Kubernetes Engine (GKE)</title>
+      <link>http://localhost:1313/posts/rancher/setting-up-rancher/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rancher/setting-up-rancher/</guid>
+      <description>&lt;p&gt;Prerequisites&#xA;Google Cloud SDK (gcloud) installed and authenticated&#xA;kubectl installed and configured&#xA;Helm (v3+) installed&#xA;Ensure that you are logged into your Google Cloud account and have set the desired project and compute zone:&lt;/p&gt;&#xA;&lt;p&gt;bash&#xA;Copy code&#xA;gcloud auth login&#xA;gcloud config set project &amp;lt;YOUR_GCP_PROJECT_ID&amp;gt;&#xA;gcloud config set compute/zone &amp;lt;YOUR_COMPUTE_ZONE&amp;gt;&#xA;Step 1: Create a GKE Cluster&#xA;Create a GKE cluster with a sufficient number of nodes and appropriate machine types:&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>How to Set Up ArgoCD for Kubernetes Continuous Deployment</title>
       <link>http://localhost:1313/posts/argo/setting-up-argocd/</link>
       <pubDate>Wed, 11 Dec 2024 00:00:00 +0000</pubDate>

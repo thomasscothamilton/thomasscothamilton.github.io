@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code Generation on Thomas-Scot Hamilton</title>
-    <link>http://localhost:57643/tags/code-generation/</link>
+    <link>http://localhost:1313/tags/code-generation/</link>
     <description>Recent content in Code Generation on Thomas-Scot Hamilton</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:57643/tags/code-generation/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/code-generation/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Set Up an OpenAPI-Generated Server</title>
-      <link>http://localhost:57643/posts/openapi/setup-python-server/</link>
+      <title>Generating a Server from an OpenAPI Specification</title>
+      <link>http://localhost:1313/posts/openapi/python-flask/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57643/posts/openapi/setup-python-server/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before you begin, ensure you have:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;An OpenAPI Specification (YAML or JSON):&lt;/strong&gt; You need a valid OpenAPI document. For example, &lt;code&gt;openapi.yaml&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;OpenAPI Generator:&lt;/strong&gt; Install the OpenAPI Generator CLI. You can do this using Homebrew, npm, or direct download. For example, using Homebrew:&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;brew install openapi-generator&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+      <guid>http://localhost:1313/posts/openapi/python-flask/</guid>
+      <description>&lt;p&gt;Overview&#xA;The OpenAPI specification allows you to describe your API in a language-agnostic way. Using the OpenAPI Generator tool, you can generate server stubs in numerous programming languages. This guide shows you how to generate a server from an OpenAPI specification and run it locally, providing a quick starting point for developing your API backend.&lt;/p&gt;&#xA;&lt;p&gt;Prerequisites&#xA;Before you begin, ensure you have:&lt;/p&gt;&#xA;&lt;p&gt;An OpenAPI Specification (YAML or JSON): You need a valid OpenAPI document. For example, openapi.yaml.&#xA;OpenAPI Generator: Install the OpenAPI Generator CLI. For example, using Homebrew run brew install openapi-generator. Using npm run npm install @openapitools/openapi-generator-cli -g.&#xA;A Chosen Programming Language and Framework: Decide which language and framework you want to generate the server in (Java Spring, Node.js Express, Python Flask, Go Gin, etc.).&#xA;Step 1: Verify Your OpenAPI Specification&#xA;Validate your OpenAPI spec:&#xA;openapi-generator validate -i openapi.yaml&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

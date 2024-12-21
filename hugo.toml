@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Thomas-Scot Hamilton'
 theme = 'hugo-theme-m10c'
 googleAnalytics = "G-WMDT577B42"
+paginate = 20
 
 [menu]
   [[menu.main]]

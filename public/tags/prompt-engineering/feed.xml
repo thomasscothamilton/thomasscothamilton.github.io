@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prompt Engineering on Thomas-Scot Hamilton</title>
+    <link>http://localhost:1313/tags/prompt-engineering/</link>
+    <description>Recent content in Prompt Engineering on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/prompt-engineering/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up a Prompt Catalog on GitHub for OpenAI Assistant Requests</title>
+      <link>http://localhost:1313/posts/prompt-engineering/create-a-prompt-catalog/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/prompt-engineering/create-a-prompt-catalog/</guid>
+      <description>&lt;h1 id=&#34;setting-up-a-prompt-catalog-on-github-for-openai-assistant-requests&#34;&gt;Setting Up a Prompt Catalog on GitHub for OpenAI Assistant Requests&lt;/h1&gt;&#xA;&lt;p&gt;A &lt;strong&gt;Prompt Catalog&lt;/strong&gt; on GitHub allows you to centrally manage and version-control prompts for use with the OpenAI Assistant API. This guide walks through setting up a structured catalog in a GitHub repository.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;benefits-of-a-github-hosted-prompt-catalog&#34;&gt;Benefits of a GitHub-Hosted Prompt Catalog&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Centralized Management&lt;/strong&gt;: Keep all prompts in one repository.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Version Control&lt;/strong&gt;: Track changes to prompts over time.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Collaboration&lt;/strong&gt;: Easily share and collaborate on prompts with team members.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automation&lt;/strong&gt;: Enable dynamic retrieval of prompts in applications or workflows.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;step-1-create-a-github-repository&#34;&gt;Step 1: Create a GitHub Repository&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Create a new repository&lt;/strong&gt; on GitHub:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

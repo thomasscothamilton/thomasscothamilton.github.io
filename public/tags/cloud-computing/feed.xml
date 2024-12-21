@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Computing on Thomas-Scot Hamilton</title>
+    <link>http://localhost:1313/tags/cloud-computing/</link>
+    <description>Recent content in Cloud Computing on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cloud-computing/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting Up Rancher on Google Kubernetes Engine (GKE)</title>
+      <link>http://localhost:1313/posts/rancher/setting-up-rancher/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/rancher/setting-up-rancher/</guid>
+      <description>&lt;p&gt;Prerequisites&#xA;Google Cloud SDK (gcloud) installed and authenticated&#xA;kubectl installed and configured&#xA;Helm (v3+) installed&#xA;Ensure that you are logged into your Google Cloud account and have set the desired project and compute zone:&lt;/p&gt;&#xA;&lt;p&gt;bash&#xA;Copy code&#xA;gcloud auth login&#xA;gcloud config set project &amp;lt;YOUR_GCP_PROJECT_ID&amp;gt;&#xA;gcloud config set compute/zone &amp;lt;YOUR_COMPUTE_ZONE&amp;gt;&#xA;Step 1: Create a GKE Cluster&#xA;Create a GKE cluster with a sufficient number of nodes and appropriate machine types:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
