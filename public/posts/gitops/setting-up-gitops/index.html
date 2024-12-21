@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Setting up GitOps Best Practices // Thomas-Scot Hamilton</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.139.4">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Thomas-Scot Hamilton" />
+    <meta name="description" content="A comprehensive guide to establishing and maintaining GitOps best practices for a reliable, scalable, and secure cloud-native delivery workflow." />
+    <link rel="stylesheet" href="/css/main.min.2ff0e2aba84cc20c0a0608e723b3ce0fc42a95ad6a538abfb30ec9490d702279.css" />
+    
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMDT577B42"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMDT577B42');
+        }
+      </script>
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Setting up GitOps Best Practices">
+  <meta name="twitter:description" content="A comprehensive guide to establishing and maintaining GitOps best practices for a reliable, scalable, and secure cloud-native delivery workflow.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/gitops/setting-up-gitops/">
+  <meta property="og:site_name" content="Thomas-Scot Hamilton">
+  <meta property="og:title" content="Setting up GitOps Best Practices">
+  <meta property="og:description" content="A comprehensive guide to establishing and maintaining GitOps best practices for a reliable, scalable, and secure cloud-native delivery workflow.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-12T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-12T00:00:00+00:00">
+    <meta property="article:tag" content="GitOps">
+    <meta property="article:tag" content="Kubernetes">
+    <meta property="article:tag" content="DevOps">
+    <meta property="article:tag" content="Continuous Delivery">
+    <meta property="article:tag" content="Best Practices">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar.jpg" alt="Thomas-Scot Hamilton" /></a>
+      <span class="app-header-title">Thomas-Scot Hamilton</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/resume/">Resume</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/skills/">Skills</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/experience/">Experience</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+      </nav>
+      <p>Experienced Staff Software Engineer with expertise in AI/ML infrastructure, internal developer platforms, and scalable cloud solutions.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://linkedin.com/in/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://www.patreon.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-patreon" viewBox="0 0 24 24" fill="currentColor"><title>Patreon</title><path d="M22.957 7.21c-.004-3.064-2.391-5.576-5.191-6.482-3.478-1.125-8.064-.962-11.384.604C2.357 3.231 1.093 7.391 1.046 11.54c-.039 3.411.302 12.396 5.369 12.46 3.765.047 4.326-4.804 6.068-7.141 1.24-1.662 2.836-2.132 4.801-2.618 3.376-.836 5.678-3.501 5.673-7.031Z"/></svg>
+          </a>
+        
+          <a href="https://ko-fi.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-kofi" viewBox="0 0 24 24" fill="currentColor"><title>Ko-fi</title><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+          </a>
+        
+          <a href="mailto:thomas.scot.hamilton@gmail.com" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Setting up GitOps Best Practices</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Dec 12, 2024
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          5 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="http://localhost:1313/tags/gitops/">GitOps</a>
+              <a class="tag" href="http://localhost:1313/tags/kubernetes/">Kubernetes</a>
+              <a class="tag" href="http://localhost:1313/tags/devops/">DevOps</a>
+              <a class="tag" href="http://localhost:1313/tags/continuous-delivery/">Continuous Delivery</a>
+              <a class="tag" href="http://localhost:1313/tags/best-practices/">Best Practices</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>GitOps has emerged as a key pattern for continuous delivery and operational management within Kubernetes and other cloud-native environments. By adopting Git as the single source of truth for both application code and infrastructure configurations, teams can achieve more consistent, predictable, and audited workflows. In this guide, we’ll outline the foundational best practices that will help you set up a robust GitOps pipeline, ensure observability and security, and support collaboration across development and operations teams.</p>
+<h2 id="what-is-gitops">What Is GitOps?</h2>
+<p>At its core, GitOps treats Git repositories as the canonical description of the desired state of your application and its infrastructure. Changes are applied by pushing to Git, and automated reconciliation loops ensure that your cluster state always converges to what’s defined in version control.</p>
+<p>The key benefits of GitOps include:</p>
+<ul>
+<li><strong>Declarative Model:</strong> Every component—applications, infrastructure, policies—is described declaratively in Git.</li>
+<li><strong>Immutable History:</strong> Every change is versioned and auditable. Rolling back to a previous state becomes as simple as reverting a Git commit.</li>
+<li><strong>Self-Healing Systems:</strong> Automated controllers continuously compare the actual state in the cluster to the desired state in Git and correct deviations.</li>
+<li><strong>Stronger Security:</strong> Credentials and secrets remain inside the cluster, not in CI pipelines. Access control can be largely managed through Git permissions and policies.</li>
+</ul>
+<h2 id="foundational-best-practices">Foundational Best Practices</h2>
+<h3 id="1-a-clear-repository-structure">1. A Clear Repository Structure</h3>
+<p>Organize your Git repository (or repositories) in a clear and intuitive way that separates code, configurations, and environments. For example:</p>
+<ul>
+<li><strong>Application Repositories:</strong> Contain the application’s source code and Dockerfiles.</li>
+<li><strong>Infrastructure Repositories:</strong> Contain Kubernetes manifests, Helm charts, Kustomize overlays, and environment-specific configurations (e.g., <code>prod</code>, <code>staging</code>, <code>dev</code> directories).</li>
+</ul>
+<p>This separation ensures that changes to configurations don’t introduce instability into application code and vice versa.</p>
+<h3 id="2-environment-specific-overlays">2. Environment-Specific Overlays</h3>
+<p>Define different overlays for each environment: dev, staging, and production. Use tools like Kustomize or Helm to apply environment-specific parameters such as:</p>
+<ul>
+<li>Image tags that point to the correct version of your application.</li>
+<li>Resource limits and requests suited to each environment.</li>
+<li>Feature toggles or configuration flags.</li>
+</ul>
+<p>Keeping environment details in separate directories or branches helps ensure that each deployment environment is isolated and can be reliably tested and promoted.</p>
+<h3 id="3-automated-pipelines-and-controllers">3. Automated Pipelines and Controllers</h3>
+<p>Use GitOps operators and controllers such as:</p>
+<ul>
+<li><strong>Flux</strong>: A popular GitOps operator that continuously reconciles cluster state with what’s declared in Git.</li>
+<li><strong>Argo CD</strong>: A declarative, GitOps-based continuous delivery tool that visually represents and reconciles desired states.</li>
+</ul>
+<p>These tools automate the process of synchronizing your cluster’s state with the Git repository, detect drift, and provide an easy rollback mechanism when needed.</p>
+<h3 id="4-immutable-references-for-deployments">4. Immutable References for Deployments</h3>
+<p>Rather than “floating” image tags (like <code>latest</code>), use immutable references such as precise semantic version tags or commit SHA references. Immutable references ensure consistent and reproducible deployments. This practice makes rollbacks and historical auditing much simpler.</p>
+<h3 id="5-git-workflow-and-branching-strategy">5. Git Workflow and Branching Strategy</h3>
+<p>Adopt a branching strategy that fits your team’s workflow and promotes stability:</p>
+<ul>
+<li><strong>Feature Branches:</strong> Developers create feature branches off <code>main</code> or <code>master</code> for changes.</li>
+<li><strong>Pull Requests and Code Reviews:</strong> All changes to the desired state must be merged via pull requests, ensuring peer review and validation before they are applied.</li>
+<li><strong>Protected Branches:</strong> Restrict direct pushes to <code>main</code> and production environment branches. This ensures that only reviewed and tested changes get deployed.</li>
+</ul>
+<p>Couple these Git protections with CI checks—linting, unit tests, and policy checks—to prevent misconfigurations from ever making it into your production environment.</p>
+<h3 id="6-integration-with-ci-tools">6. Integration with CI Tools</h3>
+<p>While GitOps focuses on continuous delivery (CD), continuous integration (CI) still plays a crucial role. Integrate CI pipelines to:</p>
+<ul>
+<li>Test and validate application code.</li>
+<li>Scan manifests and configurations for security or compliance issues.</li>
+<li>Update environment declarations when new versions of your application pass CI tests.</li>
+</ul>
+<p>A typical pipeline might build and test an application, push a new Docker image, and automatically update the configuration in the GitOps repo with the new image tag—triggering the reconcilers to apply the changes in the cluster.</p>
+<h3 id="7-automated-policy-enforcement">7. Automated Policy Enforcement</h3>
+<p>Use policy-as-code frameworks like Open Policy Agent (OPA) or Kyverno to define and enforce policies at commit or deployment time. For example:</p>
+<ul>
+<li>Disallow the use of <code>latest</code> tags.</li>
+<li>Mandate specific security contexts or resource limits.</li>
+<li>Require encryption for secrets at rest.</li>
+</ul>
+<p>By checking these policies automatically as part of the pull request or at runtime, you prevent misconfigurations and ensure compliance with internal and external standards.</p>
+<h3 id="8-observability-and-auditing">8. Observability and Auditing</h3>
+<p>To effectively manage GitOps workflows at scale, ensure proper logging, monitoring, and tracing:</p>
+<ul>
+<li><strong>Logging and Events:</strong> Operator logs and Kubernetes events help you understand why a particular change might have failed or what triggered a reconciliation.</li>
+<li><strong>Monitoring and Alerts:</strong> Leverage Prometheus/Grafana for monitoring cluster health and reconciliation metrics. Create alerts for drift or when a reconciliation fails repeatedly.</li>
+<li><strong>Auditing:</strong> Because all changes flow through Git, you already have an immutable audit log. Combine this with Kubernetes’ native audit logging to get a full picture of what changed and when.</li>
+</ul>
+<h3 id="9-secure-access-and-permissions">9. Secure Access and Permissions</h3>
+<p>All interactions with Git should be done via a dedicated service account or bot with carefully scoped permissions. Limit write permissions to the required paths and ensure secrets remain inside the cluster rather than in your CI pipelines.</p>
+<p>Whenever possible, use short-lived tokens and integrate with your organization’s single sign-on (SSO) and role-based access control (RBAC) tools for stronger security postures.</p>
+<h3 id="10-continuous-improvement-and-documentation">10. Continuous Improvement and Documentation</h3>
+<p>GitOps practices evolve as your team and infrastructure grow. Document your processes and tooling so new team members can quickly ramp up. Regularly review and refine your workflows, tooling, and policies to keep pace with best practices and emerging standards.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Setting up GitOps best practices is about more than just installing a controller—it’s a holistic approach that starts with clear repository structure, policy enforcement, and environment differentiation. Combine immutable references, rigorous code review, and tight integration with CI/CD pipelines to maintain control and predictability in your deployments. As you mature, overlay policies, observability, and security to ensure your GitOps workflows remain resilient, compliant, and efficient.</p>
+<p>By following these foundational best practices, you’ll create a reliable, scalable, and secure GitOps pipeline that supports collaboration, reduces operational toil, and streamlines your path to production.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

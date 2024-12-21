@@ -133,6 +133,7 @@ export TF_VAR_subnetwork="my-subnet"
 ```
 
 ```bash
+# Copy this command:
 terraform init
 ```
 

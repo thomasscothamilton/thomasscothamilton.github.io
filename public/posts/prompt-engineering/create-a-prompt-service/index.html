@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title> // Thomas-Scot Hamilton</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.139.4">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Thomas-Scot Hamilton" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.2ff0e2aba84cc20c0a0608e723b3ce0fc42a95ad6a538abfb30ec9490d702279.css" />
+    
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WMDT577B42"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-WMDT577B42');
+        }
+      </script>
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Thomas-Scot Hamilton">
+  <meta name="twitter:description" content="Here’s a markdown document to describe setting up a Python-based service that uses a GitHub repository containing prompts to leverage when calling the OpenAI Assistant API:
+markdown Copy code
+Setting Up a Python-Based Service for OpenAI API with GitHub-Hosted Prompts This guide walks through setting up a Python-based service that retrieves prompts from a GitHub repository and uses them to make calls to the OpenAI Assistant API.
+Prerequisites Python Environment: Ensure Python 3.8&#43; is installed. GitHub Repository: A repository containing your prompt files in structured text (e.g., JSON, YAML, or plain text). OpenAI API Key: Obtain an API key from OpenAI. Git Access: Set up access (HTTPS/SSH) to clone the GitHub repository. Step 1: Create a GitHub Repository for Prompts Create a repository on GitHub to store your prompts. Organize prompts into a structured format: Example: Store JSON files in a /prompts directory. { &#34;name&#34;: &#34;example_prompt&#34;, &#34;description&#34;: &#34;An example prompt&#34;, &#34;content&#34;: &#34;Write a detailed guide on {topic}.&#34; } Commit and push the changes: bash Copy code git add . git commit -m “Add initial prompts” git push origin main Step 2: Set Up the Python Service 2.1 Install Required Libraries Set up a Python virtual environment and install dependencies:">
+
+    <meta property="og:url" content="http://localhost:1313/posts/prompt-engineering/create-a-prompt-service/">
+  <meta property="og:site_name" content="Thomas-Scot Hamilton">
+  <meta property="og:title" content="Thomas-Scot Hamilton">
+  <meta property="og:description" content="Here’s a markdown document to describe setting up a Python-based service that uses a GitHub repository containing prompts to leverage when calling the OpenAI Assistant API:
+markdown Copy code
+Setting Up a Python-Based Service for OpenAI API with GitHub-Hosted Prompts This guide walks through setting up a Python-based service that retrieves prompts from a GitHub repository and uses them to make calls to the OpenAI Assistant API.
+Prerequisites Python Environment: Ensure Python 3.8&#43; is installed. GitHub Repository: A repository containing your prompt files in structured text (e.g., JSON, YAML, or plain text). OpenAI API Key: Obtain an API key from OpenAI. Git Access: Set up access (HTTPS/SSH) to clone the GitHub repository. Step 1: Create a GitHub Repository for Prompts Create a repository on GitHub to store your prompts. Organize prompts into a structured format: Example: Store JSON files in a /prompts directory. { &#34;name&#34;: &#34;example_prompt&#34;, &#34;description&#34;: &#34;An example prompt&#34;, &#34;content&#34;: &#34;Write a detailed guide on {topic}.&#34; } Commit and push the changes: bash Copy code git add . git commit -m “Add initial prompts” git push origin main Step 2: Set Up the Python Service 2.1 Install Required Libraries Set up a Python virtual environment and install dependencies:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/avatar.jpg" alt="Thomas-Scot Hamilton" /></a>
+      <span class="app-header-title">Thomas-Scot Hamilton</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/resume/">Resume</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/skills/">Skills</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/experience/">Experience</a>
+             | 
+          
+          <a class="app-header-menu-item" href="/contact/">Contact</a>
+      </nav>
+      <p>Experienced Staff Software Engineer with expertise in AI/ML infrastructure, internal developer platforms, and scalable cloud solutions.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://linkedin.com/in/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://www.patreon.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-patreon" viewBox="0 0 24 24" fill="currentColor"><title>Patreon</title><path d="M22.957 7.21c-.004-3.064-2.391-5.576-5.191-6.482-3.478-1.125-8.064-.962-11.384.604C2.357 3.231 1.093 7.391 1.046 11.54c-.039 3.411.302 12.396 5.369 12.46 3.765.047 4.326-4.804 6.068-7.141 1.24-1.662 2.836-2.132 4.801-2.618 3.376-.836 5.678-3.501 5.673-7.031Z"/></svg>
+          </a>
+        
+          <a href="https://ko-fi.com/thomasscothamilton" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-kofi" viewBox="0 0 24 24" fill="currentColor"><title>Ko-fi</title><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+          </a>
+        
+          <a href="mailto:thomas.scot.hamilton@gmail.com" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title"></h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jan 1, 0001
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          3 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Here’s a markdown document to describe setting up a Python-based service that uses a GitHub repository containing prompts to leverage when calling the OpenAI Assistant API:</p>
+<p>markdown
+Copy code</p>
+<h1 id="setting-up-a-python-based-service-for-openai-api-with-github-hosted-prompts">Setting Up a Python-Based Service for OpenAI API with GitHub-Hosted Prompts</h1>
+<p>This guide walks through setting up a Python-based service that retrieves prompts from a GitHub repository and uses them to make calls to the OpenAI Assistant API.</p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li><strong>Python Environment</strong>: Ensure Python 3.8+ is installed.</li>
+<li><strong>GitHub Repository</strong>: A repository containing your prompt files in structured text (e.g., JSON, YAML, or plain text).</li>
+<li><strong>OpenAI API Key</strong>: Obtain an API key from <a href="https://platform.openai.com/">OpenAI</a>.</li>
+<li><strong>Git Access</strong>: Set up access (HTTPS/SSH) to clone the GitHub repository.</li>
+</ol>
+<hr>
+<h2 id="step-1-create-a-github-repository-for-prompts">Step 1: Create a GitHub Repository for Prompts</h2>
+<ol>
+<li>Create a repository on GitHub to store your prompts.</li>
+<li>Organize prompts into a structured format:
+<ul>
+<li>Example: Store JSON files in a <code>/prompts</code> directory.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;example_prompt&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;An example prompt&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;Write a detailed guide on {topic}.&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ol>
+<p>Commit and push the changes:
+bash
+Copy code
+git add .
+git commit -m &ldquo;Add initial prompts&rdquo;
+git push origin main
+Step 2: Set Up the Python Service
+2.1 Install Required Libraries
+Set up a Python virtual environment and install dependencies:</p>
+<p>bash
+Copy code
+python3 -m venv venv
+source venv/bin/activate
+pip install openai gitpython pyyaml
+2.2 Create the Python Service Script
+Save the following script as service.py:</p>
+<p>python
+Copy code
+import os
+import git
+import openai
+import json</p>
+<h1 id="configuration">Configuration</h1>
+<p>GITHUB_REPO_URL = &ldquo;<a href="https://github.com/your-username/your-repo%22">https://github.com/your-username/your-repo&quot;</a>
+LOCAL_REPO_PATH = &ldquo;./prompts_repo&rdquo;
+OPENAI_API_KEY = &ldquo;your-openai-api-key&rdquo;</p>
+<h1 id="clone-or-pull-repository">Clone or Pull Repository</h1>
+<p>if not os.path.exists(LOCAL_REPO_PATH):
+git.Repo.clone_from(GITHUB_REPO_URL, LOCAL_REPO_PATH)
+else:
+repo = git.Repo(LOCAL_REPO_PATH)
+repo.git.pull()</p>
+<h1 id="load-prompts">Load Prompts</h1>
+<p>def load_prompts():
+prompts_dir = os.path.join(LOCAL_REPO_PATH, &ldquo;prompts&rdquo;)
+prompts = []
+for file_name in os.listdir(prompts_dir):
+if file_name.endswith(&quot;.json&rdquo;):
+with open(os.path.join(prompts_dir, file_name), &ldquo;r&rdquo;) as f:
+prompts.append(json.load(f))
+return prompts</p>
+<h1 id="call-openai-api">Call OpenAI API</h1>
+<p>def call_openai_api(prompt):
+openai.api_key = OPENAI_API_KEY
+response = openai.Completion.create(
+model=&ldquo;text-davinci-003&rdquo;,
+prompt=prompt,
+max_tokens=200
+)
+return response.choices[0].text.strip()</p>
+<h1 id="main-function">Main Function</h1>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+prompts = load_prompts()
+for prompt in prompts:
+print(f&quot;Prompt: {prompt[&lsquo;content&rsquo;]}&quot;)
+response = call_openai_api(prompt[&lsquo;content&rsquo;])
+print(f&quot;Response: {response}&quot;)
+Step 3: Run the Service
+Clone Repository &amp; Setup:</p>
+<p>Replace your-username/your-repo with your GitHub repository path.
+Replace your-openai-api-key with your OpenAI API key.
+Run the Service:</p>
+<p>bash
+Copy code
+python service.py
+Customizations
+Prompt Parsing: Modify the load_prompts function to support different formats like YAML.
+Error Handling: Add robust error handling for API calls and Git operations.
+Scheduling: Use a task scheduler like cron or apscheduler for periodic updates and executions.
+Deployment: Containerize the service with Docker for consistent deployment.
+Next Steps
+Enhance Prompt Structure: Add metadata like categories or tags for dynamic prompt selection.
+Integrate CI/CD: Automate deployment using tools like GitHub Actions.
+Logging: Integrate a logging framework to monitor API usage and errors.
+With this setup, your service can dynamically fetch and use prompts from GitHub, allowing for a streamlined and scalable workflow with OpenAI&rsquo;s Assistant API.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

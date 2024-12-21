@@ -48,17 +48,41 @@ googleAnalytics = "G-WMDT577B42"
     name = "LinkedIn"
     url = "https://linkedin.com/in/thomasscothamilton"
   [[params.social]]
+    icon = "brand-patreon"
+    name = "Patreon"
+    url = "https://www.patreon.com/thomasscothamilton"
+  [[params.social]]
+    icon = "brand-kofi"
+    name = "Ko-fi"
+    url = "https://ko-fi.com/thomasscothamilton"
+  [[params.social]]
     icon = "envelope"
     name = "Email"
     url = "mailto:thomas.scot.hamilton@gmail.com"
 
   # Styling configuration
   [params.style]
-    darkestColor = "#1a1a1a"    # Rich Black
-    darkColor = "#2c2c2c"       # Dark Charcoal
-    lightColor = "#afbac4"      # Pale Yellow
-    lightestColor = "#ffffff"   # White
-    primaryColor = "#16a085"    # Teal Green
+    favicon = "images/favicon.ico"
+    description = "A dashboard inspired by Google Cloud Console."
+    fontFamily = "Roboto, sans-serif"
+    showSocialIcons = true
+
+#    primaryColor = "#1A73E8"       # Vibrant blue for clickable elements like icons and text
+#    accentColor = "#5F6368"        # Neutral gray for less prominent elements
+#    secondaryColor = "#BDC1C6"     # Light gray for secondary text and subtext
+#    darkestColor = "#202124"       # Very dark gray for the primary background
+#    darkColor = "#292A2D"          # Slightly lighter gray for secondary backgrounds (e.g., side navigation)
+#    lightColor = "#F1F3F4"         # Light gray for subtle borders and highlights
+#    lightestColor = "#FFFFFF"      # Pure white for modals, cards, or elevated surfaces
+
+    primaryColor = "#5F6368"       # Vibrant blue for clickable elements like icons and text
+    accentColor = "#FFFFFF"        # Neutral gray for less prominent elements
+    secondaryColor = "#BDC1C6"     # Light gray for secondary text and subtext
+    darkestColor = "#FFFFFF"       # Very dark gray for the primary background
+    darkColor = "#FFFFFF"          # Slightly lighter gray for secondary backgrounds (e.g., side navigation)
+    lightColor = "#BDC1C6"         # Light gray for subtle borders and highlights
+    lightestColor = "#5F6368"      # Pure white for modals, cards, or elevated surfaces
+
 
 [outputFormats]
   [outputFormats.RSS]

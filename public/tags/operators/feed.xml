@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operators on Thomas-Scot Hamilton</title>
+    <link>http://localhost:1313/tags/operators/</link>
+    <description>Recent content in Operators on Thomas-Scot Hamilton</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/operators/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building a Kubernetes Operator to Manage GitHub Repositories</title>
+      <link>http://localhost:1313/posts/kubernetes/creating-an-operator/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/kubernetes/creating-an-operator/</guid>
+      <description>&lt;p&gt;Kubernetes Operators have transformed the way we manage and extend cloud-native applications by encapsulating operational knowledge directly into the cluster. Traditionally used to handle complex application lifecycle tasks, Operators are increasingly being leveraged to integrate third-party platforms and services directly into the Kubernetes ecosystem. In this post, we’ll explore how you can build a Kubernetes Operator to manage GitHub repositories as first-class Kubernetes resources. More importantly, we’ll discuss the architectural considerations that leave room to expand and manage other GitHub resources (like GitHub Actions, Issues, Pull Requests, or even entire organizations) down the line.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
